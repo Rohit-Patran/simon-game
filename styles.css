@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgoldenrodyellow;
+}
+
+.game-heading{
+    text-align: center;
+}
+
+.game-content{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,minmax(20vw,auto));
+    grid-template-rows: repeat(2,minmax(30vh,auto));
+    row-gap: 1vw;
+    column-gap: 1vw;
+}
+
+.red-square{
+    background-color: red;
+    border-top-left-radius: 100%;
+}
+
+.red-square.activated{
+    background-color: rgb(253, 89, 89);
+    scale: (1.2,1.2);
+}
+
+.green-square{
+    background-color: green;
+    border-top-right-radius: 100%;
+}
+
+.green-square.activated{
+    background-color: rgb(13, 209, 13);
+    scale: (1.2,1.2);
+}
+.blue-square{
+    background-color: dodgerblue;
+    border-bottom-left-radius: 100%;
+}
+
+.blue-square.activated{
+    background-color: rgb(102, 176, 250);
+    scale: (1.2,1.2);
+}
+.yellow-square{
+    background-color: yellow;
+    border-bottom-right-radius: 100%;
+}
+
+.yellow-square.activated{
+    background-color: rgb(255, 255, 133);
+    scale: (1.2,1.2);
+}
+
+
+.info
+{
+    display: block;
+    margin: 2vh auto;
+    width: fit-content;
+    font-size: large;
+}
+
+.start-button{
+    display: block;
+    margin: 2vh auto;
+    background-color: white;
+    outline: none;
+    border: solid lightgray 5px;
+    border-radius: 10px;
+    font-size: large;
+    padding: 1vw 2vw;
+}
+
+.hidden{
+    display: none;
+}
+.unclickable{
+    pointer-events: none;
+}
+
