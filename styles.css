@@ -82,3 +82,11 @@ body{
     pointer-events: none;
 }
 
+@media screen and (max-width:550px) {
+    .game-content
+    {
+        grid-template-columns: repeat(2,minmax(30vw,auto));
+        grid-template-rows: repeat(2,minmax(20vh,auto));
+    }
+}
+
